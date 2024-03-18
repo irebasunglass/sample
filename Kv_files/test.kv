@@ -1,0 +1,32 @@
+
+<TextWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+
+        Label:
+            id: label1
+            font_size: 68
+            text: root.text
+            color: root.color
+
+        BoxLayout:
+            Button:
+                id: button1
+                text: "朝"
+                font_size: 68
+                on_press: root.buttonClicked()  # ボタンをクリックした時
+
+            Button:
+                id: button2
+                text: "昼"
+                font_size: 68
+                on_press: root.buttonClicked2()  # ボタンをクリックした時
+
+            Button:
+                id: button3
+                text: "夜"
+                font_size: 68
+                on_press: root.buttonClicked3() 
+
+
